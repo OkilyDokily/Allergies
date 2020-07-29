@@ -28,5 +28,11 @@ namespace AllergiesTests{
       Assert.AreEqual(Allergy.GetStringFromHighestDouble(52) == "chocolate", true);
     }
 
+      [TestMethod]
+     public void GetStringArrayFromHighestDoubleAndDifference_IsChocolateAndTomatoes_True()
+    {
+      CollectionAssert.AreEqual(Allergy.GetStringArrayFromHighestDoubleAndDifference(52), new string[]{"chocolate","tomatoes"});
+    }
+
   }
 }

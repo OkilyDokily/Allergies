@@ -31,5 +31,13 @@ namespace Allergies{
       public static string GetStringFromHighestDouble(int i){
         return ad[GetHighestDouble(i)];
       } 
+
+      public static string[] GetStringArrayFromHighestDoubleAndDifference(int i){
+        int d = GetDifference(i);
+        string s = GetStringFromHighestDouble(d);
+        string f = GetStringFromHighestDouble(i);
+
+        return new string[] {f,s};
+      }
     }
 }
