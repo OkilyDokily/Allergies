@@ -9,7 +9,7 @@ namespace AllergiesTests{
     {
       Assert.AreEqual(Allergy.GetHighestDouble(52) == 32, true);
     }
-    
+
     [TestMethod]
      public void GetDifference_IsDifference20_True()
     {
@@ -20,6 +20,12 @@ namespace AllergiesTests{
      public void GetHighestDoubleOnDifference_IsHighestDouble16_True()
     {
       Assert.AreEqual(Allergy.GetHighestDoubleOnDifference(52) == 16, true);
+    }
+
+     [TestMethod]
+     public void GetStringFromHighestDouble_IsChocolate_True()
+    {
+      Assert.AreEqual(Allergy.GetStringFromHighestDouble(52) == "chocolate", true);
     }
 
   }
