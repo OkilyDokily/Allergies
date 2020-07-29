@@ -24,7 +24,8 @@ namespace Allergies{
       }
 
       public static int GetHighestDoubleOnDifference(int i){
-        return 0;
+        int n = GetDifference(i);
+        return GetHighestDouble(n);
       } 
     }
 }
