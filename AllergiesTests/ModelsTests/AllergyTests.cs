@@ -26,24 +26,13 @@ namespace AllergiesTests{
       Assert.AreEqual(Allergy.GetDifference(52) == 20, true);
     }
 
-    [TestMethod]
-     public void GetHighestDoubleOnDifference_IsHighestDouble16_True()
-    {
-      Assert.AreEqual(Allergy.GetHighestDoubleOnDifference(52) == 16, true);
-    }
-
      [TestMethod]
      public void GetStringFromHighestDouble_IsChocolate_True()
     {
       Assert.AreEqual(Allergy.GetStringFromHighestDouble(52) == "chocolate", true);
     }
 
-      [TestMethod]
-     public void GetStringArrayFromHighestDoubleAndDifference_IsChocolateAndTomatoes_True()
-    {
-      CollectionAssert.AreEqual(Allergy.GetStringArrayFromHighestDoubleAndDifference(52), new string[]{"chocolate","tomatoes"});
-    }
-
+  
       [TestMethod]
      public void  GetAllergyStringArray_IsChocolateAndTomatoesandShellFish_True()
     {
