@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using System;
 namespace Allergies{
     public class Allergy{
       private static Dictionary<int, string> ad = new Dictionary<int,string>(){
@@ -9,12 +9,15 @@ namespace Allergies{
       public static int GetHighestDouble(int i){
         int d = 1;
           while(true){
-          if((d * 2) >= i){
-            return d;
-          }
-          else{
-            d *= 2;
-          }
+            if (d == i){
+              return d;
+            }
+            else if((d * 2) > i){
+              return d;
+            }
+            else{
+              d *= 2;
+            }
         }
       }
 
@@ -38,6 +41,20 @@ namespace Allergies{
         string f = GetStringFromHighestDouble(i);
 
         return new string[] {f,s};
+      }
+
+      public static string[] GetAllergyStringArray(int i){
+        int c = i;
+        List<string> l = new List<string>();
+        while (c > 0){ 
+          l.Add(GetStringFromHighestDouble(c));
+          c  = GetDifference(c);
+          Console.WriteLine(c);
+        }
+        foreach(string str in l){
+          Console.WriteLine(str);
+        }
+        return l.ToArray();
       }
     }
 }
