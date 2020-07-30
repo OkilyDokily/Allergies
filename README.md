@@ -13,7 +13,13 @@ _Tells the user what allergies they have based on their allergy score_
 ## Setup/Installation Requirements
 
 ## Specs
-
+| Spec | Input | Output |
+|-|-|-|
+| Create a dictionary of allergies |  |  |
+| Find the highest available double - and then.... | --- | --- |
+| Get string from highest double |  |  |
+| find the difference between highest double and initial amount |  |  |
+| repeat steps 3 through 5 until no more |  |  |
 
 ## Known Bugs
 
