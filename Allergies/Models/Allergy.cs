@@ -36,10 +36,6 @@ namespace Allergies{
         while (c > 0){ 
           l.Add(GetStringFromHighestDouble(c));
           c  = GetDifference(c);
-          Console.WriteLine(c);
-        }
-        foreach(string str in l){
-          Console.WriteLine(str);
         }
         return l.ToArray();
       }
